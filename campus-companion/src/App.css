@@ -1,0 +1,174 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* App.css - improved modern responsive styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  color: #222;
+}
+
+.cc-header {
+  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-bottom: 0;
+}
+.cc-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.cc-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.cc-nav a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.cc-nav a.active, .cc-nav a:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+.cc-main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+h3 {
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+form, ul {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  margin-bottom: 1.5rem;
+}
+input, button {
+  padding: 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+input:focus {
+  outline: 2px solid #2563eb;
+  border-color: #2563eb;
+}
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #1e40af;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  margin-bottom: 0.7rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+@media (max-width: 800px) {
+  .cc-main {
+    max-width: 98vw;
+    padding: 0.7rem;
+  }
+  .cc-header {
+    padding: 1.2rem 0 0.7rem 0;
+  }
+  .cc-nav {
+    gap: 0.7rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .cc-header h1 {
+    font-size: 1.3rem;
+  }
+  .cc-main {
+    padding: 0.2rem;
+  }
+  form, ul {
+    padding: 0.5rem;
+  }
+}
